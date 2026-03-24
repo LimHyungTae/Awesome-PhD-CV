@@ -4,6 +4,19 @@
 
 <p><strong><em>LaTeX CV/resume templates for PhD students and researchers <br>—from ATS-optimized industry resumes to full academic CVs.</em></strong></p>
 
+<table>
+  <tr>
+    <td align="center"><b>Jake's Format</b><br><sub>Industry / ATS-safe · pdfLaTeX</sub></td>
+    <td align="center"><b>Deedy Format</b><br><sub>Industry / high-density · XeLaTeX</sub></td>
+    <td align="center"><b>Awesome-CV Format</b><br><sub>Academic / full CV · XeLaTeX</sub></td>
+  </tr>
+  <tr>
+    <td><img src="assets/jakes-preview.png" width="270"/></td>
+    <td><img src="assets/deedy-preview.png" width="270"/></td>
+    <td><img src="assets/research-cv-preview.png" width="270"/></td>
+  </tr>
+</table>
+
 </div>
 
 ______________________________________________________________________
