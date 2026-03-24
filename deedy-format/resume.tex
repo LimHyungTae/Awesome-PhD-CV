@@ -1,26 +1,32 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
 % Deedy CV/Resume Template
 % Original author: Debarghya Das (http://debarghyadas.com)
 % Repository: https://github.com/deedy/Deedy-Resume
 % License: Apache 2.0
 %
-% NOTE: This template requires the deedy-resume.cls file to be in the same
-% directory. You can download it from:
-% https://github.com/deedy/Deedy-Resume/blob/master/deedy-resume-reversed.cls
+% IMPORTANT: Compile with XeLaTeX (requires fontspec + Lato/Raleway fonts)
 %
-\documentclass[letterpaper]{deedy-resume}
+
+\documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+
 \pagestyle{fancy}
 \fancyhf{}
+
 \begin{document}
+
+\lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{First}{Last}{
-  \urlstyle{same}\href{https://your-website.com}{your-website.com} |
-  \href{mailto:your@email.com}{your@email.com} | 123-456-7890
+\namesection{Hyungtae}{Lim}{
+  \urlstyle{same}\href{https://limhyungtae.github.io/hyungtae-lim/}{limhyungtae.github.io} |
+  \href{mailto:shapelim@mit.edu}{shapelim@mit.edu} |
+  \href{https://scholar.google.com/citations?user=S1A3nbIAAAAJ}{Google Scholar}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -34,22 +40,34 @@
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
-\runsubsection{University Name}
-\descript{| BS in Computer Science}
-\location{Expected May 2024 | City, State}
+
+\subsection{KAIST}
+\descript{Ph.D. in EE \& Robotics}
+\location{Mar. 2020 -- Feb. 2023 | Daejeon, Korea}
+Advisor: Prof. Hyun Myung \\
+Dissertation: Robust LiDAR SLAM \\
+for Autonomous Vehicles
+\sectionsep
+
+\subsection{KAIST}
+\descript{M.S. in EE \& Robotics}
+\location{Mar. 2018 -- Feb. 2020 | Daejeon, Korea}
+\sectionsep
+
+\subsection{KAIST}
+\descript{B.S. in Mechanical Engineering}
+\location{Mar. 2013 -- Aug. 2018 | Daejeon, Korea}
+Dean's List (Fall 2015)
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
+%     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Coursework}
-\subsection{Undergraduate}
-Data Structures \\
-Algorithms \\
-Database Systems \\
-Operating Systems \\
-Machine Learning \\
-Computer Networks
+\section{Links}
+Website:// \href{https://limhyungtae.github.io/hyungtae-lim/}{\bf limhyungtae.github.io} \\
+GitHub:// \href{https://github.com/limhyungtae}{\bf limhyungtae} \\
+LinkedIn:// \href{https://www.linkedin.com/in/hyungtae-lim}{\bf hyungtae-lim} \\
+Scholar:// \href{https://scholar.google.com/citations?user=S1A3nbIAAAAJ}{\bf Hyungtae Lim}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -57,24 +75,23 @@ Computer Networks
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Skills}
 \subsection{Programming}
+\location{Proficient:}
+C++ \textbullet{} Python \textbullet{} ROS/ROS2 \\
 \location{Experienced:}
-Python \textbullet{} Java \textbullet{} JavaScript \\
-\location{Familiar:}
-C++ \textbullet{} Go \textbullet{} Rust \\
+PyTorch \textbullet{} CUDA \textbullet{} CMake \\
+OpenCV \textbullet{} \LaTeX
 \sectionsep
 
-\subsection{Tools \& Frameworks}
-Git \textbullet{} Docker \textbullet{} Linux \\
-React \textbullet{} Node.js \textbullet{} Flask \\
-PostgreSQL \textbullet{} MongoDB
+\subsection{Research}
+SLAM \textbullet{} 3D LiDAR \\
+Point Cloud Registration \\
+Ground Segmentation \\
+Sensor Fusion \textbullet{} Deep Learning \\
+Multi-Robot Mapping
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Links}
-GitHub:// \href{https://github.com/yourusername}{\bf yourusername} \\
-LinkedIn:// \href{https://www.linkedin.com/in/yourusername}{\bf yourusername} \\
+\subsection{Languages}
+Korean (Native) \textbullet{} English (Fluent)
 \sectionsep
 
 \end{minipage}
@@ -91,59 +108,72 @@ LinkedIn:// \href{https://www.linkedin.com/in/yourusername}{\bf yourusername} \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
 
-\runsubsection{Company Name}
-\descript{| Software Engineer Intern}
-\location{Jun 2023 -- Aug 2023 | San Francisco, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{SPARK Lab, MIT}
+\descript{| Postdoctoral Associate}
+\location{Apr. 2024 -- Present | Cambridge, MA}
+\vspace{\topsep}
 \begin{tightemize}
-\item Built and deployed microservices handling 10K+ requests/day using Python and FastAPI
-\item Reduced API response latency by 40\% through query optimization and caching strategies
-\item Collaborated with a cross-functional team of 5 engineers to ship a new user-facing feature
+\item Advised by Prof. Luca Carlone (LIDS, MIT).
+\item Research on multi-robot/-session autonomous mapping in urban environments.
+\item Guide graduate and undergraduate students in research papers and theses.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Research Lab}
-\descript{| Undergraduate Research Assistant}
-\location{Jan 2023 -- May 2023 | University City, State}
+\runsubsection{Urban Robotics Lab, KAIST}
+\descript{| Postdoctoral Fellow}
+\location{Mar. 2023 -- Mar. 2024 | Daejeon, Korea}
 \begin{tightemize}
-\item Developed a computer vision pipeline for object detection using PyTorch, achieving 92\% mAP
-\item Processed and augmented 50K+ images for training data preparation
-\item Co-authored a paper submitted to a top-tier conference
+\item Research on LiDAR and vision-based localization and mapping.
+\item Developed deep learning models for robust robot perception.
 \end{tightemize}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Projects}
-
-\runsubsection{Project Name}
-\descript{| Python, React, PostgreSQL}
-\location{Sep 2023 -- Present}
+\runsubsection{StachnissLab, Univ. Bonn}
+\descript{| Visiting Scholar}
+\location{Nov. 2022 -- Feb. 2023 | Bonn, Germany}
 \begin{tightemize}
-\item Developed a full-stack web application for real-time data visualization
-\item Implemented OAuth 2.0 authentication and role-based access control
-\item Deployed on AWS using Docker containers with CI/CD via GitHub Actions
+\item Collaborated with Prof. Cyrill Stachniss on static map building.
+\item Paper accepted at RSS 2023: \textit{ERASOR2}.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Another Project}
-\descript{| C++, CMake}
-\location{Jan 2023 -- May 2023}
+\runsubsection{NAVER LABS}
+\descript{| Research Intern}
+\location{Apr. 2022 -- Sep. 2022 | Gyeonggi-Do, Korea}
 \begin{tightemize}
-\item Implemented a high-performance graph algorithm library with O(V+E) traversal
-\item Wrote comprehensive unit tests achieving 95\% code coverage
-\item Published as an open-source package with 100+ GitHub stars
+\item Worked on robust global 3D point cloud registration.
+\item Paper accepted at IEEE ICRA 2023: \textit{ORORA}.
 \end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS / HONORS
+%     SELECTED PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Selected Publications}
+\begin{tightemize}
+\item \textbf{H. Lim} et al., ``KISS-Matcher: Fast and Robust Point Cloud Registration Revisited,'' \textit{IEEE ICRA}, 2025.
+\item D. Maggio, \textbf{H. Lim}, and L. Carlone, ``VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold,'' \textit{NeurIPS}, 2025.
+\item M. Seo, \textbf{H. Lim} et al., ``BUFFER-X: Towards Zero-Shot Point Cloud Registration,'' \textit{IEEE/CVF ICCV}, 2025.
+\item \textbf{H. Lim} et al., ``ERASOR2: Instance-Aware Robust 3D Mapping of the Static World,'' \textit{RSS}, 2023.
+\item \textbf{H. Lim} et al., ``Quatro++: Robust Global Registration Exploiting Ground Segmentation,'' \textit{IJRR}, 2023.
+\item \textbf{H. Lim} et al., ``Patchwork: Concentric Zone-Based Ground Segmentation,'' \textit{IEEE RA-L w/ IROS}, 2021.
+\item \textbf{H. Lim} et al., ``ERASOR: Egocentric Ratio-Based Dynamic Object Removal,'' \textit{IEEE RA-L w/ ICRA}, 2021.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Awards}
 \begin{tabular}{rll}
-2023 & Dean's List & University Name \\
-2022 & 1st Place & ACM Programming Competition \\
+2025 & Outstanding & IEEE ICRA'25 Reviewer Award (5/7,641) \\
+2024 & Pioneer     & RSS Pioneers 2024 (30/202 selected) \\
+2024 & 1\textsuperscript{st} Prize & HILTI SLAM Challenge, IEEE ICRA'24 \\
+2023 & Best Paper  & IEEE RA-L (5 of 1,100 papers) \\
+2023 & 1\textsuperscript{st} Prize & HILTI SLAM Challenge, IEEE ICRA'23 \\
+2023 & Innovation  & CES'23 Innovation Award \\
+2022 & 2\textsuperscript{nd} Cash  & HILTI SLAM Challenge, IEEE ICRA'22 \\
+2020 & Best Paper  & Student Best Paper Award, ICCAS \\
 \end{tabular}
 \sectionsep
 
