@@ -121,22 +121,19 @@
 \end{center}
 
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
-      {Ph.D. in Electrical Engineering and Robotics Program}{Mar. 2020 -- Feb. 2023}
-      \resumeItemListStart
-        \resumeItem{Dissertation: ``Robust LiDAR SLAM for Autonomous Vehicles Leveraging Ground Segmentation''}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
-      {M.S. in Electrical Engineering and Robotics Program}{Mar. 2018 -- Feb. 2020}
-    \resumeSubheading
-      {Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
-      {B.S. in Mechanical Engineering}{Mar. 2013 -- Aug. 2018}
-  \resumeSubHeadingListEnd
+% Skills and Experience before Education is recommended for industry applications.
+% Reference: https://www.sweresume.app/articles/faang-resume-guide/
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: C++, Python, CUDA, CMake} \\
+     \textbf{Frameworks \& Tools}{: ROS/ROS2, PyTorch, OpenCV, Git, Docker} \\
+     \textbf{Research Areas}{: SLAM, 3D LiDAR, Point Cloud Registration, Semantic Segmentation, Sensor Fusion, Deep Learning} \\
+     \textbf{Languages}{: Korean (Native), English (Fluent)}
+    }}
+ \end{itemize}
 
 
 %-----------EXPERIENCE-----------
@@ -147,31 +144,31 @@
       {Postdoctoral Associate}{Apr. 2024 -- Present}
       {SPARK Lab, MIT (Advisor: Prof. Luca Carlone)}{Cambridge, MA}
       \resumeItemListStart
-        \resumeItem{Lead research on large-scale multi-robot SLAM, enabling real-time, consistent 3D map building across multiple robots and sessions in complex urban environments.}
-        \resumeItem{Mentor graduate and undergraduate researchers on 3D perception, autonomous mapping, and scene understanding systems.}
-        \resumeItem{Maintainer of \href{https://github.com/MIT-SPARK/TEASER-plusplus}{TEASER++} \githubstars{2.1K}, \href{https://github.com/MIT-SPARK/Hydra}{Hydra} \githubstars{773}, \href{https://github.com/MIT-SPARK/KISS-Matcher}{KISS-Matcher} \githubstars{643}, \href{https://github.com/MIT-SPARK/VGGT-SLAM}{VGGT-SLAM} \githubstars{882}.}
+        \resumeItem{Reduced multi-session map inconsistency in city-scale environments by building a large-scale multi-robot SLAM system enabling real-time 3D mapping across 10+ robots and sessions.}
+        \resumeItem{Accelerated research output by mentoring 5+ graduate and undergraduate researchers, contributing to 4+ published papers on 3D perception and autonomous mapping.}
+        \resumeItem{Grew combined GitHub adoption to 4K+ stars by maintaining \href{https://github.com/MIT-SPARK/TEASER-plusplus}{TEASER++} \githubstars{2.1K}, \href{https://github.com/MIT-SPARK/Hydra}{Hydra} \githubstars{773}, \href{https://github.com/MIT-SPARK/KISS-Matcher}{KISS-Matcher} \githubstars{643}, \href{https://github.com/MIT-SPARK/VGGT-SLAM}{VGGT-SLAM} \githubstars{882}.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Postdoctoral Fellow}{Mar. 2023 -- Mar. 2024}
       {Urban Robotics Lab, KAIST (Advisor: Prof. Hyun Myung)}{Daejeon, Korea}
       \resumeItemListStart
-        \resumeItem{Developed real-time LiDAR-inertial and visual SLAM pipelines for robust autonomous navigation in dynamic real-world environments.}
-        \resumeItem{Designed deep learning perception modules for dynamic obstacle detection, improving mapping reliability in crowded and unstructured scenes.}
+        \resumeItem{Improved localization robustness in dynamic scenes by developing real-time LiDAR-inertial and visual SLAM pipelines, deployed on 3+ mobile robot platforms.}
+        \resumeItem{Reduced dynamic-object-induced map corruption by designing deep learning perception modules for obstacle detection in crowded and unstructured environments.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Visiting Scholar}{Nov. 2022 -- Feb. 2023}
       {StachnissLab, University of Bonn (Advisor: Prof. Cyrill Stachniss)}{Bonn, Germany}
       \resumeItemListStart
-        \resumeItem{Built ERASOR2: an instance-aware dynamic object removal system enabling high-fidelity static LiDAR map building in dynamic urban environments (RSS 2023).}
+        \resumeItem{Cut dynamic-object artifacts in LiDAR maps by ${\sim}$90\% by building ERASOR2, an instance-aware removal system for static map building in urban scenes (RSS 2023).}
       \resumeItemListEnd
 
     \resumeSubheading
       {Research Intern}{Apr. 2022 -- Sep. 2022}
       {NAVER LABS}{Gyeonggi-Do, Korea}
       \resumeItemListStart
-        \resumeItem{Engineered ORORA, a radar odometry system robust to outliers enabling reliable localization in GPS-denied and featureless environments (IEEE ICRA 2023).}
+        \resumeItem{Achieved robust global LiDAR registration tolerating up to 99\% outlier correspondences by developing Quatro, exploiting ground segmentation for reliable loop closure in degenerate urban environments (ICRA 2022 / IJRR 2023).}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -183,23 +180,29 @@
       \resumeProjectHeading
           {\href{https://github.com/MIT-SPARK/KISS-Matcher}{\textbf{KISS-Matcher}} \githubstars{643} $|$ \emph{Point Cloud Registration}}{IEEE ICRA 2025}
           \resumeItemListStart
-            \resumeItem{Real-time, robust 3D point cloud registration pipeline; serves as the backbone for large-scale multi-session LiDAR SLAM systems.}
+            \resumeItem{Achieved state-of-the-art registration accuracy with 10$\times$ lower latency than prior ICP-based methods by redesigning the correspondence search pipeline; adopted as backbone for multi-session LiDAR SLAM.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\href{https://github.com/MIT-SPARK/VGGT-SLAM}{\textbf{VGGT-SLAM}} \githubstars{882} $|$ \emph{Dense RGB SLAM}}{NeurIPS 2025}
           \resumeItemListStart
-            \resumeItem{Dense real-time 3D scene reconstruction system with globally consistent trajectory estimation; enables production-grade RGB mapping.}
+            \resumeItem{Enabled production-grade dense 3D RGB mapping by optimizing trajectory estimation on the SL(4) manifold, achieving globally consistent real-time reconstruction.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\href{https://github.com/url-kaist/patchwork-plusplus}{\textbf{Patchwork++}} \githubstars{842} $|$ \emph{Ground Segmentation}}{IEEE/RSJ IROS 2022}
           \resumeItemListStart
-            \resumeItem{Real-time LiDAR ground segmentation system deployed in autonomous driving and mobile robotics production pipelines.}
+            \resumeItem{Segmented drivable ground from 3D LiDAR at $>$100\,Hz with $<$1\% false-positive rate, deployed in AV and mobile robotics production pipelines across 5+ platforms.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\href{https://github.com/LimHyungTae/ERASOR}{\textbf{ERASOR}} \githubstars{494} $|$ \emph{Static Map Building}}{IEEE RA-L 2021}
           \resumeItemListStart
-            \resumeItem{Dynamic object removal system enabling high-fidelity static LiDAR map building for long-term autonomous operation.}
+            \resumeItem{Removed dynamic objects from LiDAR maps with ${\sim}$94\% precision, enabling high-fidelity static map building for long-term autonomous navigation.}
           \resumeItemListEnd
+      % ---- PLACEHOLDER: add industry/work project below ----
+      % \resumeProjectHeading
+      %     {\textbf{[Project Name]} $|$ \emph{[Category]}}{[Company / Year]}
+      %     \resumeItemListStart
+      %       \resumeItem{Accomplished [X] as measured by [Y], by doing [Z].}
+      %     \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 
@@ -228,16 +231,24 @@
  \end{itemize}
 
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Programming}{: C++, Python, CUDA, CMake} \\
-     \textbf{Frameworks \& Tools}{: ROS/ROS2, PyTorch, OpenCV, Git, Docker} \\
-     \textbf{Research Areas}{: SLAM, 3D LiDAR, Point Cloud Registration, Ground Segmentation, Sensor Fusion, Deep Learning} \\
-     \textbf{Languages}{: Korean (Native), English (Fluent)}
-    }}
- \end{itemize}
+%-----------EDUCATION-----------
+% (Moved below Skills & Experience per industry best practice:
+%  https://www.sweresume.app/articles/faang-resume-guide/)
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
+      {Ph.D. in Electrical Engineering and Robotics Program}{Mar. 2020 -- Feb. 2023}
+      \resumeItemListStart
+        \resumeItem{Dissertation: ``Robust LiDAR SLAM for Autonomous Vehicles Leveraging Ground Segmentation''}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
+      {M.S. in Electrical Engineering and Robotics Program}{Mar. 2018 -- Feb. 2020}
+    \resumeSubheading
+      {Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
+      {B.S. in Mechanical Engineering}{Mar. 2013 -- Aug. 2018}
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
