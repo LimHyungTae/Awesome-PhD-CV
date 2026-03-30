@@ -122,6 +122,11 @@ cd jakes-format
 pdflatex resume.tex
 ```
 
+**Prefer a browser-based editor?**
+[Rejectless](https://rejectless.app/jakes-resume-builder) renders Jake's Resume 
+template in your browser — no LaTeX, no compilation errors. Free PDF export, 
+ATS-safe output, and line-by-line resume linting. No account needed.
+
 ### 3. Deedy Format (`deedy-format/`)
 
 A modern two-column resume template created by [Debarghya Das](https://github.com/deedy/Deedy-Resume). Popular among **experienced software engineers and tech professionals** who need to pack substantial experience into a single page with high information density. See also: [Deedy Resume Guide](https://www.sweresume.app/articles/deedy-resume/).
