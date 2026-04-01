@@ -157,8 +157,3 @@ ______________________________________________________________________
 - Jake's Resume: [MIT License](https://opensource.org/licenses/MIT) (original by Jake Gutierrez, based on [sb2nov/resume](https://github.com/sb2nov/resume))
 - Deedy Resume: [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) (original by Debarghya Das)
 
-______________________________________________________________________
-
-## :star: Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=LimHyungTae/Awesome-PhD-CV&type=Date)](https://star-history.com/#LimHyungTae/Awesome-PhD-CV&Date)
