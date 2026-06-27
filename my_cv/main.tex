@@ -8,6 +8,9 @@
 \usepackage{fontawesome5}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -18,9 +21,10 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+
 
 % Margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -97,7 +101,7 @@
 {Indian Institute of Technology, Kharagpur}{Kharagpur, India}
 {Dual Degree (B.Tech \& M.Tech) in Chemical Engineering \;|\; Micro in \textbf{AI \& Applications}}{Aug 2023 -- May 2028}
 \resumeItemListStart
-\resumeItem {CGPA: \textbf{8.68/10.00}}
+\resumeItem {GPA: \textbf{3.5/4.0}}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -106,42 +110,48 @@
 \section{Research Experience}
 \resumeSubHeadingListStart
 
+%   \resumeSubheading
+%     {Indian Institute of Technology, Roorkee \normalfont{(Supervisor: Prof.\ Sparsh Mittal)}}{Remote}
+%     {Research Intern – Touch based Emotion Recognition}{May 2026 -- Present}
+%   \resumeItemListStart
+% \resumeItem{Developed a scalable, robust, end-to-end \textbf{multimodal learning pipeline} integrating textual and visual data, efficiently processing \textbf{54,000+ IMDB reviews} and \textbf{30,000+ movie frames} across \textbf{10+ films} from 4+ genres.}
+% \resumeItemListEnd
+
+
+
   \resumeSubheading
-    {University of Manchester  \normalfont{(Supervisor: Prof.\ Anirbit Mukherjee)}}{Manchester, UK}
-    {Research Intern – Scientific Machine Learning}{Oct 2025 -- Present}
+    {University of Manchester x NASA \normalfont{(Supervisor: Prof.\ Anirbit Mukherjee)}}{Manchester, UK}
+    {Research Intern – Scientific Machine Learning  \href{https://github.com/Hamza-Faarooq/DeepONets}{\faGithub}}{Oct 2025 -- Present}
   \resumeItemListStart
-\resumeItem{Designed and implemented \textbf{DeepONet-based neural operators on spherical domains}, modeling heat PDE dynamics with \textbf{$L_{max}=100+$ harmonic modes}, achieving stable spectral evolution and accurate eigenvalue decay.}
-\resumeItem{Engineered \textbf{geometry-aware architectures} combining \textbf{Graph CNN (HEALPix, $\sim$196K nodes)} \& \textbf{SIREN trunk networks}, mitigating spectral bias and enabling high-frequency function reconstruction on $S^2$ manifolds.}
-
-\resumeItem{Developed \textbf{spectral-domain operator learning pipelines} using \textbf{spherical harmonic transforms (SHT)}, ensuring alias-free representations up to \textbf{$L_{max}=511$} and preserving orthogonality for robust PDE generalization.}
-
-\resumeItem{Conducted \textbf{a priori vs a posteriori validation} of learned operators, demonstrating physically-consistent models improve long-time stability by \textbf{reducing spectral drift \& error accumulation} in iterative time evolution.}
-
-\resumeItem{Optimized \textbf{scalable training pipelines} via \textbf{stochastic spatial sampling (5K/196K nodes per step)}, significantly reducing the computational cost by \textbf{$\sim$40×} while preserving convergence and operator fidelity.}
-
-\resumeItem{Investigated \textbf{spectral operator discovery parallels} between turbulent \textbf{Navier–Stokes closure models and spherical PDEs}, analyzing higher-order differential learning for stable and robust neural operator generalization}  \resumeItemListEnd
+    \resumeItem{Designed and implemented \textbf{DeepONet operators} on spherical domains, modeling heat PDE dynamics with \textbf{maximum harmonic mode  $\mathbf{L_{\max}=511}$}, achieving stable spectral evolution and accurate eigenvalue decay.}
+    \resumeItem{Engineered geometry-aware architectures combining \textbf{Graph CNN (HEALPix, $\sim$196K nodes)} \& \textbf{SIREN trunk networks}, mitigating spectral bias and enabling high-frequency function reconstruction on $S^2$ manifolds.}
+    \resumeItem{Developed spectral-domain operator learning pipelines using \textbf{spherical harmonic transforms (SHT)}, ensuring alias-free representations up to $\mathbf{L_{\max}=511}$ and preserving orthogonality for robust PDE generalization.}
+    % \resumeItem{Conducted \textbf{a priori vs a posteriori validation} of learned operators, demonstrating physically-consistent models improve long-time stability by \textbf{reducing spectral drift \& error accumulation} in iterative time evolution.}
+    \resumeItem{Optimized scalable training pipelines via \textbf{stochastic spatial sampling (5K/196K nodes per step)}, significantly reducing the computational cost by \textbf{$\sim$40×} while preserving convergence and operator fidelity.}
+    % \resumeItem{Investigated \textbf{spectral operator discovery parallels} between turbulent \textbf{Navier–Stokes closure models and spherical PDEs}, analyzing higher-order differential learning for stable and robust neural operator generalization} 
+  \resumeItemListEnd
 
   \resumeSubheading
     {Indian Institute of Management, Ranchi \normalfont{(Supervisor: Prof.\ Sobhan Sarkar)}}{Remote}
-    {Research Intern – Multimodal Machine Learning}{April 2025 -- Aug 2025}
+    {Research Intern – Multimodal Machine Learning \href{https://github.com/Hamza-Faarooq/IIM_Research_Intern}{\faGithub}}{April 2025 -- Aug 2025}
   \resumeItemListStart
-\resumeItem{Developed a scalable, robust, end-to-end \textbf{multimodal learning pipeline} integrating textual and visual data, efficiently processing \textbf{54,000+ IMDB reviews} and \textbf{30,000+ movie frames} across \textbf{10+ films} from 4+ genres.}
+\resumeItem{Developed a scalable, robust, end-to-end multimodal learning pipeline, integrating textual \& visual data, efficiently processing \textbf{54,000+ IMDB reviews} and \textbf{30,000+ movie frames} across \textbf{10+ movies} from \textbf{4+ genres.}}
 
-\resumeItem{Designed and benchmarked architectures combining \textbf{BERT embeddings}, \textbf{Vision Transformer (ViT)} features, and \textbf{CLIP-based alignment} under multiple fusion strategies for improved multimodal performance evaluation.}  
+\resumeItem{Constructed \& benchmarked architectures combining \textbf{BERT embeddings}, \textbf{Vision Transformer (ViT)} features, and \textbf{CLIP-based alignment} under multiple fusion strategies for improved multimodal performance evaluation.}  
 
 \resumeItem{Evaluated the models on \textbf{five rigorous performance metrics} (Accuracy, F1, AUC, MAP, NDCG), achieving exceptionally strong peak performance of \textbf{0.875 Accuracy} and \textbf{0.982 NDCG}, best on \textbf{'Interstellar'} dataset.}
 \resumeItem{Introduced the \textbf{Dempster--Shafer evidential fusion} to explicitly model cross-modal uncertainty \& belief conflict, enabling adaptive, confidence-weighted multimodal predictions improving robustness over baseline fusion methods.}
-\resumeItem{Conducted a \textbf{comprehensive comparative analysis of multimodal fusion strategies}, evaluating the \textbf{concatenation, attention-based, and evidential approaches} to model cross-modal interactions, significantly improving ranking performance, semantic alignment, and \textbf{uncertainty-aware decision-making robustness}}
+% \resumeItem{Conducted a \textbf{comprehensive comparative analysis of multimodal fusion strategies}, evaluating the \textbf{concatenation, attention-based, and evidential approaches} to model cross-modal interactions, significantly improving ranking performance, semantic alignment, and \textbf{uncertainty-aware decision-making robustness}}
 \resumeItemListEnd
 
   \resumeSubheading
     {University of Oulu, Finland  \normalfont{(Supervisor: Prof.\ Shuai Lee)}}{Remote}
-    {Research Intern – Constrained Quadratic Optimisation}{May 2025 -- June 2025}
+    {Research Intern – Constrained Quadratic Optimisation \href{https://github.com/Hamza-Faarooq/Pruning-with-SNNs}{\faGithub}}{May 2025 -- June 2025}
   \resumeItemListStart
-\resumeItem{Formulated \& solved constrained quadratic programs for \textbf{pruning Spiking Neural Networks (SNNs),} achieving \textbf{87.5\% spatial sparsity} while preserving accuracy, \textbf{using CVXPY} with biologically inspired constraints.}
+\resumeItem{Formulated \& solved constrained quadratic programs for pruning Spiking Neural Networks (SNNs), achieving \textbf{87.5\% spatial sparsity} while preserving accuracy, \textbf{using CVXPY} with biologically inspired constraints.}
 \resumeItem{Integrated criticality-based neuron selection into pruning pipeline using layer-wise importance scores, \textbf{retaining top 112 out of 784 neurons}, and visualizing accuracy versus criticality thresholds to guide structured pruning.}
-    \resumeItem{\textbf{Implemented KL-divergence-based temporal sparsity regularization}, penalizing redundant spiking across timesteps and integrating it as a weighted constraint in CVXPY to jointly reduce spatial and temporal redundancy.}
-    \resumeItem{\textbf{Conducted experiments on MNIST and CIFAR-10 with rate encoding}, benchmarking the \textbf{accuracy degradation under varying sparsity levels} and \textbf{comparing  the SNN pruning to the ANN baselines.}}
+    \resumeItem{Implemented \textbf{KL-divergence-based temporal sparsity regularization}, penalizing redundant spiking across timesteps and integrating it as a weighted constraint in CVXPY to jointly reduce spatial and temporal redundancy.}
+    % \resumeItem{\textbf{Conducted experiments on MNIST and CIFAR-10 with rate encoding}, benchmarking the \textbf{accuracy degradation under varying sparsity levels} and \textbf{comparing  the SNN pruning to the ANN baselines.}}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -150,46 +160,88 @@
 \section{Publications \& Patents}
 \vspace{4pt}
 
-\noindent\begin{tabularx}{\textwidth}{@{} l X @{}}
-  \small\textit{Legend:} & \small C\,=\,Conference, \; J\,=\,Journal, \; P\,=\,Patent, \; A\,=\,Accepted \\[6pt]
+\noindent\begin{tabularx}{\textwidth}{@ l X @{}}
+  % \small\textit{Legend:} & \small C\,=\,Conference, \; J\,=\,Journal, \; P\,=\,Patent, \; U\,=\,Under Review \\[6pt]
 
-  \textbf{[C.1, A]} &
-  \textbf{Muhammad Hamza et al.} (2025). Movie Review Helpfulness Prediction using Semantic Alignment \& Evidential Fusion-based Multimodal Approach. \textit{International Joint Symposium on Artificial Intelligence and Natural Language Processing (iSAI-NLP) 2025}; also accepted at \textit{ICEEE--IEEE Conference 2026}. \\
+  \textbf{Muhammad Hamza et al.} (2025). \href{https://ieeexplore.ieee.org/abstract/document/11492803}{Movie Review Helpfulness Prediction using Semantic Alignment \& Evidential Fusion-based Multimodal Approach}. \textit{International Joint Symposium on Artificial Intelligence and Natural Language Processing \textbf{(iSAI-NLP) 2025}}; \textbf{\textit{ICEEE--IEEE Conference 2026}}. \\
+  [32pt]
+  
+  % \textbf{[J.1, U]} &
+  % \textbf{Muhammad Hamza}. \textit{Criticality-Constrained Iterative Pruning for Energy-Efficient Spiking Neural Networks via Combined Importance Scoring}. \textbf{Submitted to Neurocomputing — Elsevier.} \\
+  % [22pt]
+
+  % \textbf{[J.2, U]} &
+  % \textbf{Muhammad Hamza}. \textit{Curvature-Weighted Gradient Diversity: A Noise Measure for Geometry-Adaptive SGD Schedules}. \textbf{Submitted to Transactions on Machine Learning Research (TMLR).} \\
+
 \end{tabularx}
 
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
 
-  \resumeProjectHeading
-    {\textbf{Physics-Informed Generative CFD Solver} \textbar\ \emph{PyTorch, Neural Operators, DDPM}}{2026}
-  \resumeItemListStart
-
-    \resumeItem{Engineered a \textbf{physics-informed generative pipeline} (PIKAN-FNO) integrating Kolmogorov--Arnold Networks with Fourier Neural Operators to learn solution operators for steady-state Navier-Stokes PDEs with high fidelity.}
-    \resumeItem{Implemented a \textbf{Denoising Diffusion Probabilistic Model (DDPM)} with custom U-Net backbone to generate continuous fluid flow fields, enabling data-driven initialization for downstream \textbf{physics-constrained refinement.}}
-    \resumeItem{Resolved \textbf{PINN training instability} by designing an Ansatz for exact boundary condition enforcement and applying \textbf{adaptive loss balancing between PDE residuals and constraint terms} for stable convergence.}
-    \resumeItem{Conducted \textbf{rigorous model evaluation} using L2 error metrics and qualitative flow-field analysis, demonstrating strong physical consistency and generalization across unseen boundary conditions.}
-
-  \resumeItemListEnd
-
-
-
-  \resumeProjectHeading
-    {\textbf{Robustness and Calibration Analysis of Transformer Classifiers } $\mid$ \emph{PyTorch, Transformers}}{2025}
-  \resumeItemListStart
-    \resumeItem{Fine-tuned \textbf{DistilBERT on 67k-sample SST-2 dataset}, achieving \textbf{90\% validation accuracy} \& evaluated robustness under token perturbations, \textbf{observing 38\% relative ECE increase} despite accuracy degradation.}
-    
-\resumeItem{Performed reliability analysis using \textbf{ECE (0.074 → 0.103)} and reliability diagrams, revealing a \textbf{systematic overconfidence \& confidence–accuracy misalignment} of softmax outputs under simulated distribution shifts.} 
-  \resumeItemListEnd
-
 
 \resumeProjectHeading
-{\textbf{{Handwritten Digit Recognition with Neural Networks from scratch}
-} $\mid$ \emph{Numpy}}{2024}\resumeItemListStart
-\resumeItem{Achieved a \textbf{test accuracy of 91.8\% and a loss of 0.007} in handwritten digit classification using a extensible and scalable feedforward neural network architecture designed \& \textbf{implemented completely from scratch.}}
-\resumeItem{Engineered and optimized training pipeline, consistently reducing validation loss \& improving prediction accuracy.}
+{\textbf{ApexSearch: F1 Audio-Visual RAG \& Multimodal Retrieval Engine}
+\href{https://github.com/Hamza-Faarooq/ApexSearch}{\faGithub}
+$\mid$ \emph{PyTorch, FAISS, CLIP, CLAP}}{2026}
+
+\resumeItemListStart
+
+\resumeItem{Indexed \textbf{2000+ 1-FPS} video frames and \textbf{1-second audio segments} across 4 distinct F1 broadcast events, building a \textbf{cross-modal FAISS index} supporting joint audio-visual similarity queries at runtime.}
+\resumeItem{Engineered a multimodal RAG pipeline for Formula-I broadcasts, embedding \textbf{1FPS video frames \& 1-second audio segments} using \textbf{CLIP \& CLAP into FAISS}, enabling \textbf{sub-50ms retrieval} across acoustic race events.}
+\resumeItem{Integrated a hosted \textbf{LLaVA-based} vision-language model through the \textbf{Groq API} to generate Formula-I commentary from multimodal evidence, eliminating GPU requirements while enabling Streamlit deployment.}
 
 \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{VictorianGPT: Compound RAG Architecture} \href{https://github.com/Hamza-Faarooq/VictorianGPT}{\faGithub} \textbar\ \emph{PyTorch, QLoRA, ChromaDB, HuggingFace}}{2026}
+
+\resumeItemListStart
+
+\resumeItem{Built a domain-specific instruction-tuning dataset of \textbf{20K+ Victorian dialogue pairs} via regex extraction and quality filtering across \textbf{five Project Gutenberg novels}.}
+
+\resumeItem{Fine-tuned a \textbf{3B-parameter LLM with QLoRA} 4-bit quantization, optimizing efficiency \& training stability.}
+
+\resumeItem{Deployed a \textbf{ChromaDB-backed RAG system} on Hugging Face, implementing retrieval weighting to balance retrieved context and generation quality.}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Visuo-Lingual Affective Recommender System (VLARS)} \href{https://github.com/Hamza-Faarooq/Visuo-Lingual-Affective-Recommender-System-VLARS}{\faGithub} \textbar\ \emph{PyTorch, FAISS, FastAPI, Docker, GCP}}{2026}
+\resumeItemListStart
+  
+  \resumeItem{Built a multimodal user-state encoder fusing \textbf{DeepFace} micro-expression vectors and \textbf{DistilRoBERTa} sentiment embeddings into \textbf{a unified 512-dim} affective representation for downstream retrieval.}
+  
+  \resumeItem{Designed an L1-normalized late-fusion heuristic resolving cross-modal contradictions, \textbf{improving recall@5 by 23\% over text-only and 18\% over face-only} baselines on a 500-clip eval set.}
+  
+  \resumeItem{Implemented high-dimensional semantic search across 5,000 movies using \textbf{MiniLM embeddings \& FAISS retrieval}, achieving an average end-to-end \textbf{inference latency of 180ms} on CPU.}
+    
+\resumeItemListEnd
+
+  
+% \resumeProjectHeading
+%   {\textbf{Visuo-Lingual Affective Recommender System (VLARS)} \href{https://github.com/Hamza-Faarooq/Visuo-Lingual-Affective-Recommender-System-VLARS}{\faGithub} \textbar\ \emph{PyTorch, FAISS, DeepFace, Transformers}}{2026}
+% \resumeItemListStart
+  
+%   \resumeItem{Engineered a multimodal recommendation engine \textbf{fusing facial micro-expressions (DeepFace) and textual sentiment (DistilRoBERTa)} pipelines to synthesize physiological and psychological user states.}
+  
+%   \resumeItem{Designed an \textbf{$L_1$-normalized late-fusion heuristic} resolving cross-modal contradictions, improving\textbf{ recall@5 by 23\%} over text-only and \textbf{18\%} over face-only baselines on a \textbf{500-clip eval set.}}
+  
+%   \resumeItem{Implemented high-dimensional semantic search across 5,000 movies using \textbf{MiniLM embeddings \& FAISS retrieval}, achieving an \textbf{average end-to-end inference latency of 180ms on CPU.}}
+  
+
+  
+\resumeItemListEnd
+
+
+
+
+
+
+
+
+
+
 
 \resumeSubHeadingListEnd
 
@@ -198,19 +250,22 @@
 \section{Scholastic Achievements}
 \resumeSubHeadingListStart
   \resumeItemListStart
-    \resumeItem{Ranked in the \textbf{top 0.26\%} of \textbf{1.2M+ candidates} in the \textbf{Joint Entrance Examination (JEE) Main, 2023.}}
-    \resumeItem{Ranked in the \textbf{top 3\%} among \textbf{200K+ candidates} in \textbf{Joint Entrance Examination (JEE) Advanced, 2023.}}
+    \resumeItem{Ranked in the \textbf{top 0.26\%} of \textbf{1.2M+ candidates} in the Joint Entrance Examination \textbf{(JEE) Main}, 2023.}
+    \vspace{-2pt}
+    \resumeItem{Ranked in the \textbf{top 3\%} among \textbf{200K+ candidates} in Joint Entrance Examination \textbf{(JEE) Advanced}, 2023.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
+\vspace{-10pt}
 %-----------COMPETITIONS-----------
 \section{Competitions}
 \resumeSubHeadingListStart
 
+\vspace{2pt}
   \resumeSubheading
     {Optiver Trade-athon 2026}{\textbf{Optiver}}{March 2026}{}
   \resumeItemListStart
-    \resumeItem{Secured \textbf{Rank 23} amongst IIT competitors in \textbf{Optiver's annual Trade-athon}, a competitive quantitative trading challenge involving real-time market-making and pricing strategies under dynamic simulated market conditions.}
+    \resumeItem{Secured \textbf{Rank 23} competitors in \textbf{Optiver's annual Trade-athon}, a competitive quantitative trading challenge involving real-time market-making \& pricing strategies under dynamic simulated market conditions.}
   \resumeItemListEnd
 
   \resumeSubheading
@@ -223,7 +278,7 @@
     {NK Securities Research Hackathon 2025}{\textbf{NK Securities Research}}{Jun 2025}{}
   \resumeItemListStart
     \resumeItem{Secured \textbf{Global Rank 198/6000+} and achieved an ultra-low MSE of \textbf{9.8e-5} in implied volatility prediction using advanced feature engineering, \textbf{outperforming standard ML baselines by 10$\times$ in accuracy.}}
-    \resumeItem{Developed a high-frequency volatility forecasting pipeline using \textbf{178K+ records} and \textbf{90+ engineered features}.}
+    \resumeItem{Developed a high-frequency volatility forecasting pipeline using \textbf{278K+ records} and \textbf{90+ engineered features}.}
   \resumeItemListEnd
 
   \resumeSubheading
@@ -237,22 +292,23 @@
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
-\resumeSubHeadingListStart
-  \item\small{
-    \textbf{Languages \& Frameworks:} Python, C++, C, SQL, PyTorch, TensorFlow, NumPy, Pandas, Scikit-learn, SciPy \\
-    \textbf{ML / AI:} Neural Operators (FNO, DeepONet), PINNs, Diffusion Models, Transformers (ViT, BERT, CLIP), SNNs \\
-    \textbf{Tools:} Git, \LaTeX
-  }
+
+\small
+\textbf{Languages \& Frameworks:} Python, C++, C, SQL, PyTorch, TensorFlow, NumPy, Pandas, Scikit-learn, SciPy \\[2pt]
+\textbf{ML / AI:} Deep Learning, Neural Operators (DeepONet, Graph-DeepONet), Transformers (ViT, BERT, CLIP), NLP, Computer Vision, Multimodal Learning, Spiking Neural Networks (SNNs) \\[2pt]
+\textbf{Tools:} Git, \LaTeX
+
+
 \resumeSubHeadingListEnd
 
 
-% \section{\textbf{Coursework Information}}
-
-% \begin{itemize}[leftmargin=0.05in, label={}]
-% \item \textbf{Mathematics and Computer Science:} Artificial Intelligence: Foundations and Applications, Programming and Data Structures (Theory and Laboratory), Linear Algebra, Advanced Calculus, Transform Calculus, Numerical and Complex Analysis, Computer-Aided Process Engineering
-% \vspace{-5pt}
-% \item \textbf{MOOCs:} Classical Machine Learning, Neural Networks and Deep Learning, Improving Deep Neural Networks, Convolutional Neural Networks, Natural Language Processing, Large Language Models
-% \end{itemize}
+\section{Coursework Information}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.05in, label={}]
+\item \textbf{Mathematics and Computer Science:} Artificial Intelligence: Foundations and Applications, Programming and Data Structures (Theory and Laboratory), Linear Algebra, Advanced Calculus, Transform Calculus, Numerical and Complex Analysis, Computer-Aided Process Engineering
+\vspace{-5pt}
+\item \textbf{MOOCs:} Classical Machine Learning, Neural Networks and Deep Learning, Improving Deep Neural Networks, Convolutional Neural Networks, Natural Language Processing, Large Language Models
+\end{itemize}
 
 %-------------------------------------------
 \end{document}
