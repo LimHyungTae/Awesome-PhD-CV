@@ -27,7 +27,7 @@ ______________________________________________________________________
 <td width="180" valign="middle"><img src="https://github.com/user-attachments/assets/3ba18529-b929-44ff-a643-d83fc5d7999a" width="140" style="border-radius:8px"/></td>
 <td valign="middle">
 
-Hey! I'm [Hyungtae Lim](https://limhyungtae.github.io/hyungtae-lim/), a robotics researcher who studies SLAM/perception/scene understanding. I achived my Ph.D at [KAIST](https://urobot.kaist.ac.kr/) in South Korea, and recently wrapped up a postdoc at MIT, and just landed a job at a big tech company.
+Hey! I'm [Hyungtae Lim](https://limhyungtae.github.io/hyungtae-lim/), a robotics researcher who studies SLAM/perception/scene understanding. I achived my Ph.D at [KAIST](https://urobot.kaist.ac.kr/) in South Korea (advised by [Prof. Hyun Myung](https://urobot.kaist.ac.kr/url_teams/prof-hyunmyung/)), and recently wrapped up a postdoc at MIT (advised by Prof. [Luca Carlone](https://lucacarlone.mit.edu/)), and just landed a job at a big tech company.
 
 While preparing my industry applications, I quickly realized there's a huge discrepancy between what a big tech company needs and what academia expects. An academic CV is long, publication-heavy, and formatted for a human reviewer who cares about your research story. An industry resume needs to survive an ATS filter first — and a lot of the LaTeX tricks we use in academic CVs (custom fonts, multi-column layouts, fancy glyphs) silently break those parsers before a recruiter ever sees your name.
 
@@ -40,7 +40,7 @@ ______________________________________________________________________
 
 ## :bulb: The Core Insight: Project-Driven, Not Publication-Driven
 
-The biggest mistake PhD students make when applying to industry is submitting a publication-driven CV. Here is the mindset shift:
+The biggest mistake PhD students make when applying to industry is submitting a *publication-driven* CV. Here is the mindset shift:
 
 | Academic CV | Industry Resume |
 |---|---|
@@ -49,7 +49,9 @@ The biggest mistake PhD students make when applying to industry is submitting a 
 | Venue and novelty matter | Impact, scale, and real-world deployment matter |
 | Readers are domain experts | First reader is an ATS parser, then a recruiter, then an engineer |
 
-**The "Key Relevant Projects" section is the most important thing to customize.** For every application, ask: *which of my projects is most relevant to this specific team's work?* An AV perception team wants to see detection/segmentation work. A mapping team wants SLAM/HD map work. Swap your projects accordingly — do not send the same resume everywhere.
+Another common mistake: **listing TA and academic service roles in Experience.** Industry hiring managers skip these — they are looking for engineering impact, not classroom administration. If you want to convey mentorship or leadership, fold it into a bullet under your main research role (e.g., *"Mentored 5+ graduate researchers, contributing to 4+ published papers"*).
+
+**The "Selected Projects" section is the most important thing to customize.** For every application, ask: *which of my projects is most relevant to this specific team's work?* An AV perception team wants to see detection/segmentation work. A mapping team wants SLAM/HD map work. Swap your projects accordingly — do not send the same resume everywhere.
 
 Open-source projects with GitHub stars are particularly powerful: they prove not just that you can build something, but that **others rely on your code** — which is exactly what production teams want to hire.
 
@@ -120,6 +122,11 @@ cd jakes-format
 pdflatex resume.tex
 ```
 
+**Prefer a browser-based editor?**
+[Rejectless](https://rejectless.app/jakes-resume-builder) renders Jake's Resume 
+template in your browser — no LaTeX, no compilation errors. Free PDF export, 
+ATS-safe output, and line-by-line resume linting. No account needed.
+
 ### 3. Deedy Format (`deedy-format/`)
 
 A modern two-column resume template created by [Debarghya Das](https://github.com/deedy/Deedy-Resume). Popular among **experienced software engineers and tech professionals** who need to pack substantial experience into a single page with high information density. See also: [Deedy Resume Guide](https://www.sweresume.app/articles/deedy-resume/).
@@ -149,3 +156,4 @@ ______________________________________________________________________
 - Awesome-CV: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (original by Claud D. Park)
 - Jake's Resume: [MIT License](https://opensource.org/licenses/MIT) (original by Jake Gutierrez, based on [sb2nov/resume](https://github.com/sb2nov/resume))
 - Deedy Resume: [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) (original by Debarghya Das)
+

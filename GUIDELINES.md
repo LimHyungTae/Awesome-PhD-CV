@@ -149,3 +149,4 @@ ______________________________________________________________________
 4. **No numbers** — if you cannot quantify, describe scale: `city-scale`, `airport-scale`, `1000+ hours of data`
 5. **Contribution unclear** — every bullet must answer: *"so what does this mean for the robot or product?"*
 6. **Multi-column LaTeX CV submitted directly** — run it through an ATS simulator first, or just use `jakes-format/`
+7. **Listing TA roles in Experience** — Teaching Assistant duties (grading, office hours, course prep) are invisible to industry hiring managers. They do not signal engineering or research impact. If you want to show mentorship, frame it as a bullet under your main research role: *"Mentored 5+ graduate researchers, contributing to 4+ published papers."*
