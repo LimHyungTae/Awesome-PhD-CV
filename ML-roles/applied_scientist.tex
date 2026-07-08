@@ -1,0 +1,247 @@
+% ============================================
+% MICROSOFT ML ENGINEER — TAILORED RESUME
+% Muhammad Hamza | IIT Kharagpur
+% Optimized for: ML Engineering, Production ML, MLOps
+% ============================================
+\documentclass[10.5pt, a4paper]{article}
+
+% ---------- PACKAGES ----------
+\usepackage[margin=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{parskip}
+% ---------- COLORS ----------
+\definecolor{msblue}{RGB}{0, 120, 212}
+\definecolor{darkgray}{RGB}{50, 50, 50}
+\definecolor{medgray}{RGB}{100, 100, 100}
+
+% ---------- HYPERREF ----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=msblue,
+    urlcolor=msblue,
+    pdftitle={Muhammad Hamza - ML Engineer Resume},
+    pdfauthor={Muhammad Hamza}
+}
+
+% ---------- SECTION FORMATTING ----------
+\titleformat{\section}
+    {\large\bfseries\color{msblue}}
+    {}
+    {0em}
+    {}
+    [\color{msblue}\titlerule]
+\titlespacing*{\section}{-20pt}{8pt}{5pt}
+
+% ---------- CUSTOM COMMANDS ----------
+\newcommand{\resumeItem}[1]{\item[\textbullet] #1}
+
+\newcommand{\expEntry}[4]{%
+    \hspace*{-16pt}%
+    \textbf{#1} \hfill #2 \\
+    \hspace*{-12pt}%
+    \textit{#3} \hfill \textit{#4} \\[-4pt]
+    \vspace{-6pt}
+}
+
+\newcommand{\projEntry}[2]{%
+    \hspace*{-16pt}\textbf{#1} \hfill #2 \\[-4pt]
+    \vspace{-8pt}
+}
+\newcommand{\skillLine}[2]{\textbf{#1:} #2}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+\pagestyle{empty}
+
+% ============================================
+% HEADER
+% ============================================
+\begin{center}
+    {\LARGE\bfseries\color{msblue} Muhammad Hamza}\\[4pt]
+    \faIcon{envelope} \href{mailto:muhammadhamza@kgpian.iitkgp.ac.in}{muhammadhamza@kgpian.iitkgp.ac.in} \quad
+    \faIcon{phone} +91-95697-91233 \quad
+    \faIcon{github} \href{https://github.com/hamza-faarooq}{GitHub} \quad
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/muhammad-hamza-iftekhar-hamid-784903204/}{Linkedin} \quad
+    \faIcon{globe} \href{https://hamza-faarooq.github.io}{Website}
+\end{center}
+\vspace{3pt}
+
+\section{Education}
+\expEntry
+    {Indian Institute of Technology Kharagpur}{Kharagpur, India}
+    {Dual Degree (B.Tech + M.Tech), Specialization in Artificial Intelligence \& Applications}{Aug 2023 -- May 2028}
+
+\vspace{-6pt}
+\hspace{-1pt}\textbf{CGPA: 8.62/10.00}
+    \vspace{-2pt}
+
+% ============================================
+% WORK EXPERIENCE — ML ENGINEERING FOCUS
+% ============================================
+\section{Research Experience}
+    \vspace{1pt}
+
+\expEntry
+    {\href{https://github.com/Vision-jarvis/Spherical-PDE}{University of Manchester $\times$ NASA}}{Remote}
+    {Research Intern @ Scientific Machine Learning Team}{Nov 2025 -- Present}
+    \vspace{-4pt}
+\begin{itemize}[leftmargin=-1pt, itemsep=1pt, topsep=-2pt, parsep=0pt]
+    \resumeItem{Designed and implemented \textbf{DeepONet operators} on spherical domains, modeling heat PDE dynamics with \textbf{maximum harmonic mode  $\mathbf{L_{\max}=511}$}, achieving stable spectral evolution and accurate eigenvalue decay.}
+    \resumeItem{Engineered geometry-aware architectures combining \textbf{Graph CNN (HEALPix, $\sim$196K nodes)} \& \textbf{SIREN trunk networks}, mitigating spectral bias and enabling high-frequency function reconstruction on $S^2$ manifolds.}
+    \resumeItem{Developed spectral-domain operator learning pipelines using \textbf{spherical harmonic transforms (SHT)}, ensuring alias-free representations up to $\mathbf{L_{\max}=511}$ and preserving orthogonality for robust PDE generalization.}
+    % \resumeItem{Conducted \textbf{a priori vs a posteriori validation} of learned operators, demonstrating physically-consistent models improve long-time stability by \textbf{reducing spectral drift \& error accumulation} in iterative time evolution.}
+    \resumeItem{Optimized scalable training pipelines via \textbf{stochastic spatial sampling (5K/196K nodes per step)}, significantly reducing the computational cost by \textbf{$\sim$40×} while preserving convergence and operator fidelity.}
+    % \resumeItem{Investigated \textbf{spectral operator discovery parallels} between turbulent \textbf{Navier–Stokes closure models and spherical PDEs}, analyzing higher-order differential learning for stable and robust neural operator generalization} 
+\end{itemize}
+
+    \vspace{1pt}
+
+\expEntry
+    {\href{https://github.com/Hamza-Faarooq/cwgd-optimizer}{Independent Research --- Geometry-Aware Deep Learning Optimization}}
+    {}
+    {Independent Researcher}{Feb 2026 -- Present}
+    \vspace{-4pt}
+
+\begin{itemize}[leftmargin=-1pt,itemsep=1pt,topsep=-2pt,parsep=0pt]
+\resumeItem{Developed \textbf{Curvature-Weighted Gradient Diversity (CWGD)}, a novel optimizer metric that adaptively modulates Stochastic Gradient Descent learning rates by down-weighting high-curvature directions to isolate stochastic noise.}
+
+    \resumeItem{Derived rigorous convergence guarantees for the \textbf{CWGD-Cosine} schedule, proving a \textbf{$1/(1+\alpha)$} reduction in the asymptotic convergence floor, achieving a theoretical \textbf{2$\times$ loss reduction} at the optimal $\alpha=1$.}
+
+    \resumeItem{Evaluated CWGD across diverse optimization regimes ($\kappa\in\{5,10,20,50\}$ and varying batch sizes), consistently achieving \textbf{20\% lower final suboptimality} with strong statistical significance (\textbf{$p<10^{-4}$}) over 20 independent runs.}
+
+    \resumeItem{Implemented an optimized \textbf{Hutchinson diagonal estimator} to eliminate degenerate variance ratios, achieving an exact curvature proxy with \textbf{0.5\% normalized computational overhead} and open-sourced the reproducible pipeline.}
+\end{itemize}
+\vspace{1pt}
+
+\expEntry
+    {\href{https://github.com/Hamza-Faarooq/IIM_Research_Intern}{Indian Institute of Management, Ranchi}}{Remote}
+    {Applied ML Engineer @ Multimodal Systems}{Apr 2025 -- Aug 2025}
+        \vspace{-4pt}
+
+\begin{itemize}[leftmargin=-1pt, itemsep=1pt, topsep=-2pt, parsep=0pt]
+\resumeItem{Developed a scalable, robust, end-to-end multimodal learning pipeline, integrating textual \& visual data, efficiently processing \textbf{54,000+ IMDB reviews} and \textbf{30,000+ movie frames} across \textbf{10+ movies} from \textbf{4+ genres.}}
+
+\resumeItem{Constructed \& benchmarked architectures combining \textbf{BERT embeddings}, \textbf{Vision Transformer (ViT)} features, and \textbf{CLIP-based alignment} under multiple fusion strategies for improved multimodal performance evaluation.}  
+
+\resumeItem{Evaluated the models on \textbf{five rigorous performance metrics} (Accuracy, F1, AUC, MAP, NDCG), achieving exceptionally strong peak performance of \textbf{0.875 Accuracy} and \textbf{0.982 NDCG}, best on \textbf{'Interstellar'} dataset.}
+\resumeItem{Introduced the \textbf{Dempster--Shafer evidential fusion} to explicitly model cross-modal uncertainty \& belief conflict, enabling adaptive, confidence-weighted multimodal predictions improving robustness over baseline fusion methods.}
+\end{itemize}
+\vspace{1pt}
+
+\expEntry
+    {\href{https://github.com/Hamza-Faarooq/Pruning-with-SNNs}{University of Oulu, Finland}}{Remote}
+    {ML Engineer @ Efficient Neural Computation}{May 2025 -- Jun 2025}
+        \vspace{-4pt}
+
+\begin{itemize}[leftmargin=-1pt, itemsep=1pt, topsep=-2pt, parsep=0pt]
+\resumeItem{Formulated \& solved constrained quadratic programs for pruning Spiking Neural Networks (SNNs), achieving \textbf{87.5\% spatial sparsity} while preserving accuracy, \textbf{using CVXPY} with biologically inspired constraints.}
+\resumeItem{Integrated criticality-based neuron selection into pruning pipeline using layer-wise importance scores, \textbf{retaining top 112 out of 784 neurons}, and visualizing accuracy versus criticality thresholds to guide structured pruning.}
+    \resumeItem{Implemented \textbf{KL-divergence-based temporal sparsity regularization}, penalizing redundant spiking across timesteps and integrating it as a weighted constraint in CVXPY to jointly reduce spatial and temporal redundancy.}
+\end{itemize}
+
+    \vspace{-1pt}
+
+
+% ============================================
+% PUBLICATIONS
+% ============================================
+\section{Publications}
+
+\begin{itemize}[leftmargin=-1pt, itemsep=2pt, topsep=-2pt, parsep=0pt]
+\vspace{2pt}
+    \resumeItem{\textbf{Muhammad Hamza} et al. (2025).
+    \href{https://ieeexplore.ieee.org/abstract/document/11492803}{\textit{Movie Review Helpfulness Prediction using Semantic Alignment \& Evidential Fusion-based Multimodal Approach}}.
+    Accepted at \textbf{iSAI-NLP 2025}; Published at \textbf{IEEE Xplore 2026}.}
+
+    \resumeItem{\textbf{Muhammad Hamza} and Ayush Goel. (2026).
+    \href{https://arxiv.org/abs/2606.30455}{\textit{Curvature-Weighted Gradient Diversity: A Noise Measure for Geometry-Adaptive SGD Schedules}}.
+    \textbf{arXiv:2606.30455 (Preprint)}.}
+
+    \resumeItem{\textbf{Muhammad Hamza}. (2026).
+    \href{https://arxiv.org/abs/2606.30676}{\textit{Criticality-Constrained Iterative Pruning for Energy-Efficient Spiking Neural Networks via Combined Importance Scoring}}.
+    \textbf{arXiv:2606.30676 (Preprint)}.}
+
+\end{itemize}
+    \vspace{-1pt}
+
+
+% ============================================
+% PROJECTS — PRODUCTION ML FOCUS
+% ============================================
+\section{Selected Projects}
+\projEntry
+    {\href{https://github.com/hamza-faarooq/apexsearch}{ApexSearch: Multimodal RAG Engine for F1 Broadcasts}}{PyTorch, FAISS, CLIP, CLAP, LLaVA, Groq API}
+        \vspace{-1pt}
+
+\begin{itemize}[leftmargin=-1pt, itemsep=1pt, topsep=-2pt, parsep=0pt]
+ \resumeItem{Indexed \textbf{2000+ 1-FPS} video frames and \textbf{1-second audio segments} across 4 distinct F1 broadcast events, building a \textbf{cross-modal FAISS index} supporting joint audio-visual similarity queries at runtime.}
+\resumeItem{Engineered a multimodal RAG pipeline for Formula-I broadcasts, embedding \textbf{1FPS video frames \& 1-second audio segments} using \textbf{CLIP \& CLAP into FAISS}, enabling \textbf{sub-50ms retrieval} across acoustic race events.}
+\resumeItem{Integrated a hosted \textbf{LLaVA-based} vision-language model through the \textbf{Groq API} to generate Formula-I commentary from multimodal evidence, eliminating GPU requirements while enabling Streamlit deployment.}
+\end{itemize}
+\vspace{3pt}
+
+\projEntry
+    {\href{https://github.com/hamza-faarooq/victoriangpt}{VictorianGPT: Domain-Specific RAG Architecture}}{PyTorch, QLoRA, ChromaDB, HuggingFace}
+\begin{itemize}[leftmargin=-1pt, itemsep=1pt, topsep=-2pt, parsep=0pt]
+    \resumeItem{Constructed \textbf{100K+ instruction-tuning dataset} via regex extraction and quality filtering across \textbf{50 classical novels}}
+    \resumeItem{Fine-tuned \textbf{3B-parameter LLM} with QLoRA 4-bit quantization, reducing memory by 75\% while maintaining stability}
+    \resumeItem{Deployed \textbf{ChromaDB-backed RAG system} on HuggingFace with retrieval weighting for context-relevant generation}
+\end{itemize}
+\vspace{3pt}
+
+\projEntry
+    {\href{https://github.com/hamza-faarooq/vlars}{VLARS: Visuo-Lingual Affective Recommender}}{PyTorch, FAISS, DeepFace, DistilRoBERTa}
+\begin{itemize}[leftmargin=-1pt, itemsep=1pt, topsep=-2pt, parsep=0pt]
+    \resumeItem{Built a multimodal user-state encoder fusing \textbf{DeepFace} micro-expression vectors and \textbf{DistilRoBERTa} sentiment embeddings into \textbf{a unified 512-dim} affective representation for downstream retrieval.}
+  
+  \resumeItem{Designed an L1-normalized late-fusion heuristic resolving cross-modal contradictions, \textbf{improving recall@5 by 23\% over text-only and 18\% over face-only} baselines on a 500-clip eval set.}
+  
+  \resumeItem{Implemented high-dimensional semantic search across 5,000 movies using \textbf{MiniLM embeddings \& FAISS retrieval}, achieving an average end-to-end \textbf{inference latency of 180ms} on CPU.}
+\end{itemize}
+
+
+
+% ============================================
+% ACHIEVEMENTS & COMPETITIONS
+% ============================================
+\section{Achievements}
+\begin{itemize}[leftmargin=-1pt, itemsep=1pt, topsep=-2pt, parsep=0pt]
+
+    \resumeItem{\textbf{Amazon ML Summer School 2026}: One of the 3,000 participants selected from over 133,000 applicants (top 2.3\%)
+}
+
+    \resumeItem{\textbf{Joint Entrance Examination Main 2023}: Secured an All India Rank of 3071 among 1.2 Million+ candidates}
+    \resumeItem{\textbf{Joint Entrance Examination Advanced 2023}: Secured an All India Rank of 5072 among 200K+ candidates}
+    \resumeItem{\textbf{Optiver Trade-athon 2026}: Rank 23/500+ in quantitative trading challenge with real-time market-making strategies}
+    \resumeItem{\textbf{NK Securities Research Hackathon 2025}: Global Rank 198/6000+ \& MSE $9.8 \times 10^{-5}$ in implied volatility prediction}
+    \resumeItem{\textbf{Convolve 4.0 (IIT Madras)}: All India Rank 102 in ML/AI screening assessment from a participant pool of 10,000+}
+\end{itemize}
+
+
+
+% ============================================
+% TECHNICAL SKILLS — ENGINEERING FOCUS
+% ============================================
+\section{Technical Skills}
+\begin{itemize}[leftmargin=-1pt, itemsep=1pt, topsep=-2pt, parsep=0pt]
+    \item \skillLine{Languages}{Python (expert), C++ (proficient), C, SQL}
+    \item \skillLine{ML Frameworks}{PyTorch (expert), TensorFlow, JAX/Flax (learning), HuggingFace Transformers, PyTorch Lightning, DeepSpeed, ONNX Runtime}
+    \item \skillLine{MLOps \& Infrastructure}{Git, Docker, CI/CD (GitHub Actions), FastAPI, GCP, Azure ML (familiar), Kubernetes (basic), MLflow, Weights \& Biases}
+    \item \skillLine{ML Domains}{Deep Learning, Computer Vision (ViT, CNN), NLP (BERT, CLIP), Multimodal Learning, Neural Operators, Scientific ML, Spiking Neural Networks}
+    \item \skillLine{Data \& Compute}{NumPy, Pandas, Scikit-learn, CUDA, Multi-GPU training (DDP), Distributed data processing, FAISS vector search}
+\end{itemize}
+
+% ============================================
+% COURSEWORK
+% ============================================
+% \section{Relevant Coursework}
+% \begin{itemize}[leftmargin=-1pt, itemsep=1pt, topsep=-2pt, parsep=0pt]
+%     \resumeItem{\textbf{IIT KGP}: AI Foundations, Programming \& Data Structures, Linear Algebra, Advanced Calculus, Numerical Analysis, Computer-Aided Process Engineering}
+%     \resumeItem{\textbf{MOOCs}: Machine Learning, Neural Networks, Deep Learning, CNNs, NLP, LLMs (Coursera/DeepLearning.AI)}
+% \end{itemize}
+
+\end{document}
