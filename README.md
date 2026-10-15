@@ -127,6 +127,11 @@ pdflatex resume.tex
 template in your browser — no LaTeX, no compilation errors. Free PDF export, 
 ATS-safe output, and line-by-line resume linting. No account needed.
 
+**Need it in Google Docs or Word?**
+[ReadableResume](https://readableresume.com/jakes-resume-template) has Jake's layout as a Google Docs 
+and Word (.docx) template, for application portals that only take .docx. Copy it to Docs or download 
+the .docx for free, no account needed.
+
 ### 3. Deedy Format (`deedy-format/`)
 
 A modern two-column resume template created by [Debarghya Das](https://github.com/deedy/Deedy-Resume). Popular among **experienced software engineers and tech professionals** who need to pack substantial experience into a single page with high information density. See also: [Deedy Resume Guide](https://www.sweresume.app/articles/deedy-resume/).
